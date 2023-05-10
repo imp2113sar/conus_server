@@ -1,5 +1,5 @@
 // Start the server
-const PORT = process.env.port || 8000;
+const PORT = 8000;
 const express = require('express');
 const app = express();
 
