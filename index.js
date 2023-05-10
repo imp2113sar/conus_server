@@ -1,6 +1,6 @@
 // Start the server
 const PORT = 8000;
-const express = require('express');
+import express from 'express';
 const app = express();
 
 // Define the route for the API endpoint
