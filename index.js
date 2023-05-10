@@ -1,6 +1,6 @@
 // Start the server
-const PORT = 8000;
-import express from 'express';
+const port = process.env.port || 8000;
+const express = require('express');
 const app = express();
 
 // Define the route for the API endpoint
@@ -17,6 +17,6 @@ app.get('/current-time', (req, res) => {
   res.json(responseData);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
